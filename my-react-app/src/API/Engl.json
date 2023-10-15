@@ -1,0 +1,225 @@
+{
+  "header": {
+    "block-1-h1": "September 17",
+    "block-1-p": "Thursday",
+    "block-2-h1": "Kyiv",
+    "block-2-p": "Ukraine",
+    "text": "The place where you start earning more",
+    "btn": "Learn More"
+  },
+
+  "btn": {
+    "text": "Register"
+  },
+
+  "section-1": {
+    "01": "SEO, PPC Professional",
+    "02": "Arbitrager",
+    "03": "Webmaster",
+    "04": "CPA Network, Affiliate",
+    "05": "Advertiser"
+  },
+
+  "section-2": {
+    "title-1": "Sempro 2021",
+    "title-2": "Gathering Point for Arbitrators and SEO Professionals",
+
+    "card-1": {
+      "title": "Panel Discussions",
+      "text": "Join and get insights from experts on the hottest topics in the world of SEO and affiliate marketing."
+    },
+
+    "card-2": {
+      "title": "Exhibition Area",
+      "text": "Among the event's sponsors and exhibitors are leading SEO companies and affiliate networks from trending niches, advertising platforms, services for SEO and arbitrage - everything you need to boost your profit."
+    },
+
+    "card-3": {
+      "title": "3000m² for Networking",
+      "text": "Connect with your crowd. We create the perfect conditions for networking. No info-biz, SMM. Only SEO, Arbitrage, and hardcore."
+    },
+
+    "card-4": {
+      "title": "Sempro Afterparty",
+      "text": "This is not just a themed party, it's a self-sufficient networking event. The best DJs, Go-Go girls, show ballets, contests, plus a space for meeting old friends."
+    },
+
+    "title-3": "Learn All About Earning in the Most Popular Niches",
+
+    "category-1": {
+      "h2": "Nutra",
+      "text": "What to do with traffic in a niche with no organic?"
+    },
+
+    "category-2": {
+      "h2": "PDL",
+      "text": "Find out which geos convert and how to get a 40% ROI."
+    },
+
+    "category-3": {
+      "h2": "Gambling",
+      "text": "How to conquer gambling: million-dollar budgets and a niche not for solo players."
+    },
+
+    "category-4": {
+      "h2": "Betting",
+      "text": "Thanks for active participation in the voting! We'll announce the speaker very soon."
+    }
+  },
+
+  "section-3": {
+    "title": "Moderators"
+  },
+
+  "section-4": {
+    "title": "Speakers",
+
+    "more-details": "Learn More",
+
+    "card-1": {
+      "text": "Author and co-owner of over 30 successful Internet projects. Founder of Clickbaza."
+    },
+
+    "card-2": {
+      "text": "SEO Specialist with 5 years of experience"
+    },
+
+    "card-3": {
+      "text": "Firelink.Media"
+    },
+
+    "card-4": {
+      "text": "Co-founder of the CPA Lab arbitrage team"
+    },
+
+    "card-5": {
+      "text": "Very cool, not a scammer at Parimatch.tech"
+    },
+
+    "card-6": {
+      "text": "Genius, millionaire at 16, owner of a Tesla"
+    },
+
+    "card-7": {
+      "text": "Founder of the SCAMM.pro arbitrage team"
+    },
+
+    "card-8": {
+      "text": "Opened 12 shawarma stalls"
+    }
+  },
+
+  "section-5": {
+    "title": "Speaker and Publication Reviews"
+  },
+
+  "section-6": {
+    "title": "Where SEMPRO CONFERENCE 2021 Will Take Place",
+    "text": "The Kyiv International Conference Center is a modern and unique complex that combines innovation, style, and the reputation of the capital's best event venue. That's why SEMPRO is taking place here for the second year in a row.",
+    "location": "Kyiv, Park Road, 16a"
+  },
+
+  "section-7": {
+    "title": "Traditionally, the afterparty is a grand event that concludes SEMPRO CONFERENCE. Energetic dancing, rivers of alcohol, a packed show program. Let's see how cool it was at AFTERPARTY 2020",
+    "youtube": "Watch"
+  },
+
+  "section-8": {
+    "title": "Registration for SEMPRO 2021",
+    "text-1": "Choice of Packages",
+    "text-2": "Prices are valid from 19.09.21 to 01.11.21",
+
+    "card-1": {
+      "title": "Conference",
+      "price": "$120",
+      "btn-more": "Learn More"
+    },
+
+    "card-2": {
+      "title": "Afterparty",
+      "price": "$80",
+      "btn-more": "Learn More"
+    },
+
+    "card-3": {
+      "title": "VIP Participation",
+      "price": "$240",
+      "btn-more": "Learn More"
+    },
+
+    "card-4": {
+      "title": "Online",
+      "price": "$42",
+      "btn-more": "Learn More"
+    },
+
+    "form": {
+      "FIO": "Full Name*",
+      "Email": "Email*",
+      "Phone": "Phone*",
+      "Occupation": "Occupation"
+    },
+
+    "text-info": "You can make the payment now or later (via the link sent to your email). Registration will allow you to reserve your ticket before the price increase.",
+    "count": "Total Cost:",
+    "btn": "Register"
+  },
+
+  "section-9": {
+    "title": "Main Sponsor",
+    "card": {
+      "icon-text-1": "Instagram",
+      "icon-text-2": "Telegram Channel",
+      "text-1": "PM Affiliates is the advertising partner program of the well-known bookmaker company Parimatch.",
+      "text-2": "The partner program provides three of the most popular collaboration models: CPA, Revenue Share, and hybrid. They are also ready to consider each case individually and always meet their partners' needs.",
+      "text-3": "PM Affiliates offers direct offers from the advertiser at the highest rate in the market, its own mobile iOS app, juicy promo materials for current events, and much more.",
+      "more-info": "Details on the",
+      "more-infoSpan": "website",
+      "speak-name": "Maxim Makovetskyi",
+      "speac-position": "Head of Affiliates"
+    }
+  },
+
+  "last section": {
+    "title": "Where to Stay During Sempro",
+    "card-1": {
+      "text-1": "2 km from the venue",
+      "h1": "Maison Blanche",
+      "text-2": "Discount with promo code VPG20"
+    },
+
+    "card-2": {
+      "text-1": "5 minutes from the venue",
+      "h1": "Aloft Kyiv",
+      "text-2": "Discount with promo code VPG20"
+    },
+
+    "card-3": {
+      "text-1": "3.2 km from the venue",
+      "h1": "Bursa Hotel Kyiv",
+      "text-2": "Discount with promo code VPG20"
+    },
+
+    "h1-2": "Media Partners",
+    "h1-3": "Information Partners",
+
+    "last-card": {
+      "title": "Contacts",
+      "text-contact": "+38 095 886 07 59",
+      "text-span": "(Viber, WhatsApp, Telegram)",
+      "email": "club.sempro@gmail.com",
+    
+      "last-card-1": {
+        "h1": "Sponsors",
+        "name": "Natalia",
+        "position": "Head of Sempro"
+      },
+
+      "last-card-2": {
+        "h1": "Media Partnership",
+        "name": "Anna",
+        "position": "Head of Sempro"
+      }
+    }
+  }
+}
