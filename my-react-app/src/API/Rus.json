@@ -77,35 +77,51 @@
     "more-details": "Подробнее",
 
     "card-1": {
-      "text": "Автор и совладелец более 30 успешных проектов в сети Интернет. Founder Clickbaza."
+      "text": "Автор и совладелец более 30 успешных проектов в сети Интернет. Founder Clickbaza.",
+      "btnOne": "Gambling",
+      "btnTwo": "SEO"
     },
 
     "card-2": {
-      "text": "SEO-Specialist c 5-ти летним опытом"
+      "text": "SEO-Specialist c 5-ти летним опытом",
+      "btnOne": "Adult",
+      "btnTwo": "SEO"
     },
 
     "card-3": {
-      "text": "Firelink.Media"
+      "text": "Firelink.Media",
+      "btnOne": "PDL",
+      "btnTwo": "Affiliate"
     },
 
     "card-4": {
-      "text": "Сооснователь арбитраж-команды CPAlab"
+      "text": "Сооснователь арбитраж-команды CPAlab",
+      "btnOne": "Нутра",
+      "btnTwo": "Affiliate"
     },
 
     "card-5": {
-      "text": "Очень крутая богатая, не скаммер Parimatch.tech"
+      "text": "Очень крутая богатая, не скаммер Parimatch.tech",
+      "btnOne": "Betting",
+      "btnTwo": "SEO"
     },
 
     "card-6": {
-      "text": "Гений, миллионер в 16 лет, владелец Tesla"
+      "text": "Гений, миллионер в 16 лет, владелец Tesla",
+      "btnOne": "Crypto",
+      "btnTwo": "SEO"
     },
 
     "card-7": {
-      "text": "Основатель арбитраж-команды SCAMM.pro"
+      "text": "Основатель арбитраж-команды SCAMM.pro",
+      "btnOne": "Нутра",
+      "btnTwo": "Affiliate"
     },
 
     "card-8": {
-      "text": "Открыл 12 палаток с шаурмой"
+      "text": "Открыл 12 палаток с шаурмой", 
+      "btnOne": "Gambling",
+      "btnTwo": "SEO"
     }
   },
 
