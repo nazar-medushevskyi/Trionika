@@ -95,17 +95,21 @@ const cardsSpeakTwo = [
 export const SectionFour = () => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [state, setState] = useState(false)
+  const [state, setState] = useState(false);
+  const [selectedPerson, setSelectedPerson] = useState(null);
+
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   }
 
-  const handleOpen = () => {
+  const handleOpen = (person) => {
+    setSelectedPerson(person);
     setState(true)
   }
 
   const handleClose = () => {
+    setSelectedPerson(null);
     setState(false)
   }
 
@@ -162,7 +166,7 @@ export const SectionFour = () => {
                 </div>
                 <div className={`effect-to-top ${index % 2 === 1 ? 'blue' : 'red'} effect-to-top-x`}>
                   <div className="effect-to-top__container">
-                    <p className="link-more" id="openModalBtn" onClick={handleOpen}>Подробнее</p>
+                    <p className="link-more" id="openModalBtn" onClick={() => handleOpen(el)}>Подробнее</p>
                     <img className="frame" src={frame} alt="" />
                   </div>
                 </div>
@@ -187,7 +191,7 @@ export const SectionFour = () => {
                   </div>
                   <div className={`effect-to-top ${index % 2 === 1 ? 'blue' : 'red'} effect-to-top-x`}>
                     <div className="effect-to-top__container">
-                      <p className="link-more" id="openModalBtn">Подробнее</p>
+                      <p className="link-more" id="openModalBtn" onClick={() => handleOpen(el)}>Подробнее</p>
                       <img className="frame" src={frame} alt="" />
                     </div>
                   </div>
@@ -208,15 +212,15 @@ export const SectionFour = () => {
           <div className="modal-content">
             <img className="close" src={Close} id="closeModalBtn" alt="" onClick={handleClose}/>
             <div className="modal-content-block-1">
-              <img className="modal-img" src={One} alt="" />
+              <img className="modal-img" src={selectedPerson.image} alt="" />
               <div className="modal-content-block-2">
                 <div className="modal-line"></div>
                 <div className="speakers__card-buttons buttons-container">
-                  <button className="button-card">Gambling</button>
-                  <button className="button-card" style={{ backgroundColor: '#E53030', color: 'white' }}>SEO</button>
+                  <button className="button-card">{selectedPerson.btnOne}</button>
+                  <button className="button-card" style={{ backgroundColor: '#E53030', color: 'white' }}>{selectedPerson.btnTwo}</button>
                 </div>
-                <h1 className="h1 modal-h1">Дмитрий Голополосов</h1>
-                <p className="modal-text">Автор и совладелец более 30 успешных проектов в сети Интернет. Founder Clickbaza.</p>
+                <h1 className="h1 modal-h1">{selectedPerson.name}</h1>
+                <p className="modal-text">{selectedPerson.text}</p>
                 <div className="modal-line"></div>
               </div>
             </div>
