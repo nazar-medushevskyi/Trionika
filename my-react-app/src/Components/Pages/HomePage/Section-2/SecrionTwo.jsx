@@ -4,6 +4,7 @@ import One from './Images/sms.svg';
 import Two from './Images/photo.svg';
 import Three from './Images/people.svg';
 import Four from './Images/cup.svg';
+import Conference from './Images/conference.svg';
 
 const imageItems = [One, Two, Three, Four]
 
@@ -81,7 +82,7 @@ export const SecrionTwo = () => {
         <h1 className='sectionTwo__content-h1 external-h1-sectionTwo'>
           Узнай все о заработке в <br /> самых популярных нишах
         </h1>
-        <div className="confe" />
+        <img className='confe' src={Conference} alt="Conference" />
 
 
         <div className="blocks-for-contnent-sectionTwo">
