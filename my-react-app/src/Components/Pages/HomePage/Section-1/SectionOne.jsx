@@ -105,6 +105,8 @@ export const SectionOne = () => {
             <button className='button confa-btn'>{jsonDate['btn']['text']}</button>
           </div>
 
+          <div class="block-for-logo" />
+
           <div className="two__conf-block">
             <div className="slider-container">
               <div className="slider">

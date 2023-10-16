@@ -1,4 +1,5 @@
 .section-1 {
+  position: relative;
   margin: 100px auto;
   max-width: 1300px;
 }
@@ -372,4 +373,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.block-for-logo {
+  position: absolute;
+  background-image: url(./Images/Union.png);
+  width: 700px;
+  height: 700px;
+  top: 25%;
+  left: 75%;
+  z-index: -1;
 }
