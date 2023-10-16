@@ -92,6 +92,48 @@ const cardsSpeakTwo = [
   },
 ];
 
+const moreModal = [
+  {
+    title: "Как создать стабильный поток дохода с новостной витрины",
+    text: "Manish Goyal is a technology entrepreneur who strives to achieve success through innovation. He graduated from MIT with a Bachelors & Masters in Computer Science & Electrical Engineering. He’s the Founder & CEO of Friendbuy, a SaaS platform powering Growth Marketing for e-commerce disruptors such as Dollar Shave Club, Away, Casper and Afterpay, and Fortune 1000s such as Walmart, Intuit, Disney and Nestle."
+  },
+
+  {
+    title: "Путь к постоянному доходу через новостную витрину.",
+    text: "I am a professional in the field of news showcases, striving for success through continuous innovation. My expertise lies in monetizing news platforms and ensuring a steady income."
+  },
+
+  {
+    title: "Увеличение дохода с новостной витрины: секреты успешного монетизирования.",
+    text: "The secret to my success lies in the ability to maximize income from news websites and create stable income sources for my clients."
+  },
+
+  {
+    title: "Гарантированный заработок с использованием новостных витрин.",
+    text: "My knowledge and experience in the realm of news websites stem from my education at the Massachusetts Institute of Technology, where I earned both a Bachelor's and a Master's degree in Computer Science and Electrical Engineering."
+  },
+
+  {
+    title: "Как обеспечить стабильный доход с новостных сайтов.",
+    text: "As the founder and CEO of my company, I have created and developed the Friendbuy marketing platform, which supports e-commerce growth for companies like Dollar Shave Club, Away, Casper, and Fortune 1000 companies such as Walmart, Intuit, Disney, and Nestle."
+  },
+
+  {
+    title: "Искусство монетизации новостных витрин.",
+    text: "With my experience and skills, I help others monetize their news platforms and secure a stable income."
+  },
+
+  {
+    title: "Стратегии для устойчивого дохода с новостных площадок",
+    text: "My goal is to boost revenue and success for news portals through strategies I've developed over many years in this field."
+  },
+
+  {
+    title: "Постоянный поток прибыли с новостных порталов.",
+    text: "Specializing in news showcase monetization, I help businesses and entrepreneurs achieve continuous profit growth."
+  },
+]
+
 export const SectionFour = () => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -103,9 +145,9 @@ export const SectionFour = () => {
     setIsOpen(!isOpen);
   }
 
-  const handleOpen = (person) => {
-    setSelectedPerson(person);
-    setState(true)
+  const handleOpen = (person, index) => {
+    setSelectedPerson({ ...person, index });
+    setState(true);
   }
 
   const handleClose = () => {
@@ -166,7 +208,7 @@ export const SectionFour = () => {
                 </div>
                 <div className={`effect-to-top ${index % 2 === 1 ? 'blue' : 'red'} effect-to-top-x`}>
                   <div className="effect-to-top__container">
-                    <p className="link-more" id="openModalBtn" onClick={() => handleOpen(el)}>Подробнее</p>
+                    <p className="link-more" id="openModalBtn" onClick={() => handleOpen(el, index)}>Подробнее</p>
                     <img className="frame" src={frame} alt="" />
                   </div>
                 </div>
@@ -191,7 +233,7 @@ export const SectionFour = () => {
                   </div>
                   <div className={`effect-to-top ${index % 2 === 1 ? 'blue' : 'red'} effect-to-top-x`}>
                     <div className="effect-to-top__container">
-                      <p className="link-more" id="openModalBtn" onClick={() => handleOpen(el)}>Подробнее</p>
+                      <p className="link-more" id="openModalBtn" onClick={() => handleOpen(el, index)}>Подробнее</p>
                       <img className="frame" src={frame} alt="" />
                     </div>
                   </div>
@@ -210,7 +252,7 @@ export const SectionFour = () => {
       {state && (
         <div id="myModal" className="modal">
           <div className="modal-content">
-            <img className="close" src={Close} id="closeModalBtn" alt="" onClick={handleClose}/>
+            <img className="close" src={Close} id="closeModalBtn" alt="" onClick={handleClose} />
             <div className="modal-content-block-1">
               <img className="modal-img" src={selectedPerson.image} alt="" />
               <div className="modal-content-block-2">
@@ -224,9 +266,9 @@ export const SectionFour = () => {
                 <div className="modal-line"></div>
               </div>
             </div>
-            <h1 className="modal-h1 small-h1">Как создать стабильный поток дохода с новостной витрины</h1>
+            <h1 className="modal-h1 small-h1">{moreModal[selectedPerson.index].title}</h1>
             <p className="modal-text">О себе:</p>
-            <p className="modal-text-2">Manish Goyal is a technology entrepreneur who strives to achieve success through innovation. He graduated from MIT with a Bachelors & Masters in Computer Science & Electrical Engineering. He’s the Founder & CEO of Friendbuy, a SaaS platform powering Growth Marketing for e-commerce disruptors such as Dollar Shave Club, Away, Casper and Afterpay, and Fortune 1000s such as Walmart, Intuit, Disney and Nestle.</p>
+            <p className="modal-text-2">{moreModal[selectedPerson.index].text}</p>
           </div>
         </div>
       )}
