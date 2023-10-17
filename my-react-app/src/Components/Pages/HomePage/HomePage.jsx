@@ -4,6 +4,7 @@ import { SectionOne } from './Section-1/SectionOne';
 import { SecrionTwo } from './Section-2/SecrionTwo';
 import { SectionThree } from './Section-3/SectionThree';
 import { SectionFour } from './Section-4/SectionFour';
+import { SectionFive } from './Section-5/SectionFive';
 
 export const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ export const HomePage = () => {
       <SecrionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
     </>
   );
 }

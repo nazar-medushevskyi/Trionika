@@ -1,0 +1,143 @@
+.title-sectionFive {
+  padding: 21px 80px;
+}
+
+.sectionFive-h1 {
+  color: #0D0D17;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.main-blockFive {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sectionFive__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.sectionFive__cards-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.sectionFive__cards-1-image-1 {
+  height: 386px;
+  width: 351px;
+}
+
+.sectionFive__cards-1-image-2 {
+  width: 351px;
+  height: 60px;
+}
+
+
+.sectionFive__cards-2-image-1 {
+  width: 570px;
+  height: 450px;
+}
+
+
+
+.block-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block-arrow-container {
+  display: flex;
+  gap: 8px;
+}
+
+.block-arrow__left,
+.block-arrow-rigth {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.arrow-slide-section-5-rigth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(./Images/arrow-left.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.arrow-slide-section-5-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(./Images/arrow-rigth.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.sectionFive__cards-3-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.block-images-forFiveSection {
+  position: relative;
+
+}
+
+.sectionFive__cards-3-block-mainImage {
+  width: 351px;
+  height: 386px;
+}
+
+.sectionFive__cards-3-block-mainImage-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 64px;
+  height: 48px;
+}
+
+.sectionFive__custom-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  background: #F9F9F9;
+  margin-bottom: 120px;
+}
+
+.sectionFive__custom-block-images {
+  height: 100px;
+  width: 150px;
+  /* animation: slideLeft 5s linear infinite; */
+}
+
+/* @keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
