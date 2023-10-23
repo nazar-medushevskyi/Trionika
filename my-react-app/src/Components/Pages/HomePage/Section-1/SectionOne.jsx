@@ -1,4 +1,4 @@
-import './SectionOne.css';
+import './SectionOne.scss';
 import '../../../../API/Rus.json';
 import jsonDate from '../../../../API/Rus.json'
 import One from './Images/slider/1.png';

@@ -1,4 +1,4 @@
-import './SectionFour.css';
+import './SectionFour.scss';
 import jsonDate from '../../../../API/Rus.json'
 import { useState } from 'react';
 import Frame from './Images/Frame.svg';
@@ -231,7 +231,7 @@ export const SectionFour = () => {
                       <button className="button-card" style={{ backgroundColor: '#E53030', color: 'white' }}>{el.btnTwo}</button>
                     </div>
                   </div>
-                  <div className={`effect-to-top ${index % 2 === 1 ? 'blue' : 'red'} effect-to-top-x`}>
+                  <div className={`effect-to-top ${index % 2 === 1 ? 'blue' : 'red'} effect-to-top-y`}>
                     <div className="effect-to-top__container">
                       <p className="link-more" id="openModalBtn" onClick={() => handleOpen(el, index)}>Подробнее</p>
                       <img className="frame" src={frame} alt="" />
@@ -259,7 +259,10 @@ export const SectionFour = () => {
                 <div className="modal-line"></div>
                 <div className="speakers__card-buttons buttons-container">
                   <button className="button-card">{selectedPerson.btnOne}</button>
-                  <button className="button-card" style={{ backgroundColor: '#E53030', color: 'white' }}>{selectedPerson.btnTwo}</button>
+                  <button className="button-card"
+                    style={{ backgroundColor: '#E53030', color: 'white' }}
+                  >
+                    {selectedPerson.btnTwo}</button>
                 </div>
                 <h1 className="h1 modal-h1">{selectedPerson.name}</h1>
                 <p className="modal-text">{selectedPerson.text}</p>

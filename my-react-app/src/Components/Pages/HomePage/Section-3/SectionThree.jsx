@@ -1,4 +1,4 @@
-import './SectionThree.css'
+import './SectionThree.scss'
 import jsonDate from '../../../../API/Rus.json';
 import One from './Images/1.png';
 import Two from './Images/2.png'

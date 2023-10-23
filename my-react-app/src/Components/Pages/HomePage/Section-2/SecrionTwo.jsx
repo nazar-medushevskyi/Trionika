@@ -1,4 +1,4 @@
-import './SecrionTwo.css';
+import './SecrionTwo.scss';
 import jsonDate from '../../../../API/Rus.json';
 import One from './Images/sms.svg';
 import Two from './Images/photo.svg';

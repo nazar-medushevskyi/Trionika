@@ -1,4 +1,4 @@
-import './SectionFive.css'
+import './SectionFive.scss'
 import jsnonDate from '../../../../API/Rus.json';
 
 import One from './Images/1.png';

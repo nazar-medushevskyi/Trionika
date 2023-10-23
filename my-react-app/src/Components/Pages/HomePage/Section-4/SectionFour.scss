@@ -4,77 +4,77 @@
   justify-content: space-between;
   align-items: center;
   padding: 21px 80px;
-}
 
-.sectionFour__content-h1 {
-  color: #0D0D17;
+  &-h1 {
+    color: #0D0D17;
   font-family: Inter;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-}
+  }
 
-.sectionFour__content-list {
-  list-style: none;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 
-.sectionFour__content-listT {
-  display: inline-flex;
-  padding: 3px 10px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 40px;
-  border: 1px solid #E5E5E5;
-  transition: 0.3s;
-}
+    &T {
+      display: inline-flex;
+      padding: 3px 10px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 40px;
+      border: 1px solid #E5E5E5;
+      transition: 0.3s;
+    }
+  }
 
-.sectionFour__content-link {
-  text-decoration: none;
-  color: #000;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.14px;
+  &-link {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+  }
 }
-
 
 .button-block {
   width: 126px;
   height: 25px;
   cursor: pointer;
-}
 
-.button-block__info {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-  align-items: center;
-  border: 1px solid #E5E5E5;
+  &__info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    border: 1px solid #E5E5E5;
+  
+  }
 
-}
+  &__text {
+    color: #0D0D17;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
 
-.button-block__text {
-  color: #0D0D17;
-  font-family: Inter;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-}
-
-.button-block__frame {
-  display: block;
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
+  &__frame {
+    display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  
 }
 
 .sectionFour__content-listT.is-active {

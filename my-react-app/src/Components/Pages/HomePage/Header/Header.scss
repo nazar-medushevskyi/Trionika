@@ -1,0 +1,280 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(20, 20, 30, 0.75), rgba(20, 20, 30, 0.75)), url(./Images/header-main.png);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+
+
+  &__content {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 80px;
+  }
+
+  &__logos-logoAndText {
+    display: flex;
+    gap: 10px;
+  }
+
+  &-buttons {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &-button-1 {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__alContent {
+    padding: 21px 80px;
+
+    &__h1 {
+      margin-top: 48px;
+      color: #FFF;
+      font-family: Inter;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    &-text {
+      color: #FFF;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      opacity: 0.78;
+    }
+
+    &-block {
+      display: flex;
+      align-items: center;
+      margin-top: 190px;
+
+      &-1 {
+        width: 254px;
+        height: 95px;
+        flex-shrink: 0;
+        border: 0.848px solid #FFF;
+
+        &-h1 {
+          color: #FFF;
+          text-align: center;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+        }
+
+        &-h2 {
+          color: #FFF;
+          text-align: center;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+        }
+
+        &-p1 {
+          color: #FFF;
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+        }
+
+        &-p2 {
+          color: #FFF;
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+        }
+      }
+
+      &-2 {
+        width: 254px;
+        height: 95px;
+        flex-shrink: 0;
+        border: 0.848px solid #FFF;
+      }
+
+
+    }
+  }
+
+  &-footer {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    &-image {
+      height: 30px;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  white-space: nowrap;
+}
+
+.nav__link {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover {
+    color: #E53030;
+
+  }
+}
+
+.contact {
+  display: flex;
+  gap: 24px;
+}
+
+.logo-text {
+  background-image: url(./Images/Sempro.svg);
+  width: 96px;
+  height: 25px;
+
+}
+
+.text-for-logo {
+  margin-top: -5px;
+  margin-bottom: -10px;
+  color: #FDFEFE;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.1px;
+}
+
+.main-logo {
+  border-radius: 4.5px;
+  background: #E53030;
+
+  &-image {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.container-for-logoTItle {
+  display: flex;
+  flex-direction: column;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &__text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__block {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid gray;
+    border-radius: 50%;
+
+    &-arrow {
+      position: absolute;
+      background-image: url(./Images/Arrow.svg);
+      width: 12px;
+      height: 12px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  max-width: 290px;
+  max-height: 60px;
+  flex-shrink: 0;
+  background-color: #E53030;
+  padding: 16px 18px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  padding: 18px 16px;
+
+  background-image: url('./Images/right-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+  transition: .3s;
+
+
+  &:hover {
+    background-color: #E94C4C;
+
+  }
+}
+
+.block-forSvg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+  backdrop-filter: blur(11px);
+}
+
+.header-button-2 {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  transition: 0.3s;
+}

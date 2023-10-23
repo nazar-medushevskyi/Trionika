@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.scss';
 import Telegram from './Images/telegram-fill.svg';
 import Youtube from './Images/youtube-fill.svg';
 import FaceBook from './Images/facebook-circle-fill.svg';
