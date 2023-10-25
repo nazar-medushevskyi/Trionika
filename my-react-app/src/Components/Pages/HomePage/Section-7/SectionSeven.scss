@@ -1,0 +1,60 @@
+.sectionSeven {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 80px;
+
+  background-image: url(./Images/bg-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+    &-little {
+      color: #FFF;
+      text-align: right;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      opacity: 0.5
+    }
+  }
+
+  &__backContent {
+    margin-top: 46px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &-image {
+      width: 68px;
+      height: 48px;
+    }
+
+    &-text {
+      color: #FFF;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+    }
+  }
+
+}

@@ -7,6 +7,7 @@ import { SectionFour } from './Section-4/SectionFour';
 import { SectionFive } from './Section-5/SectionFive';
 import { SectionSix } from './Section-6/SectionSix';
 import { SectionSeven } from './Section-7/SectionSeven';
+import { SectionEight } from './Section-8/SectionEight';
 
 export const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ export const HomePage = () => {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
     </>
   );
 }
