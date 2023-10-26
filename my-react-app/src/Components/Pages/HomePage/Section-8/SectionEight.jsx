@@ -1,35 +1,61 @@
 import './SectionEight.scss'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import jsonDate from '../../../../API/Rus.json';
 import Header from './Images/Header.png';
 import Plus from './Images/plus.svg';
 import Done from './Images/radio_button_checked.svg';
+import Confa from './Images/Conf.png';
+import AFTERPARTY from './Images/AFTERPARTY.png';
+import Online from './Images/ONLINE.png';
+import Vip from './Images/VIP.png'
+import DoneDone from './Images/done.svg';
+import Close from './Images/close.svg';
+
+const imagesItems = [Confa, AFTERPARTY, Online, Vip];
+
+const ImageItemsFast = [
+  {
+    image: imagesItems[0],
+  },
+
+  {
+    image: imagesItems[1],
+  },
+
+  {
+    image: imagesItems[3],
+  },
+
+  {
+    image: imagesItems[2],
+  },
+]
 
 const cardBase = [
   {
     title: jsonDate['section-8']['card-1']['title'],
-    price: jsonDate['section-8']['card-1']['price'],
+    price: 120,
     btn: jsonDate['section-8']['card-1']['btn-more']
   },
 
   {
     title: jsonDate['section-8']['card-2']['title'],
-    price: jsonDate['section-8']['card-2']['price'],
+    price: 80,
     btn: jsonDate['section-8']['card-2']['btn-more']
   },
 
   {
     title: jsonDate['section-8']['card-3']['title'],
-    price: jsonDate['section-8']['card-3']['price'],
+    price: 240,
     btn: jsonDate['section-8']['card-3']['btn-more']
   },
 
   {
     title: jsonDate['section-8']['card-4']['title'],
-    price: jsonDate['section-8']['card-4']['price'],
+    price: 42,
     btn: jsonDate['section-8']['card-4']['btn-more']
   },
-]
+];
 
 const dateForForm = [
   {
@@ -51,13 +77,54 @@ const dateForForm = [
     title: jsonDate['section-8']['form']['Occupation'],
     placeholder: 'Скаммер'
   },
+];
 
+const mainBaseModal = [
+  {
+    imgae: DoneDone,
+    text: 'Welcome coffee'
+  },
+
+  {
+    imgae: DoneDone,
+    text: 'Пакет участника'
+  },
+
+  {
+    imgae: DoneDone,
+    text: 'Посещение докладов;'
+  },
+
+  {
+    imgae: DoneDone,
+    text: 'Доступ к выставочной зоне;'
+  },
+
+  {
+    imgae: DoneDone,
+    text: 'Мобильное приложение;'
+  },
+
+  {
+    imgae: DoneDone,
+    text: 'Записи всех докладов'
+  },
 ]
 
 export const SectionEight = () => {
 
   const [cardStates, setCardStates] = useState(Array(cardBase.length).fill(false));
   const [selectedCardInfo, setSelectedCardInfo] = useState(null);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [open, Setopen] = useState(false);
+
+  const handleOpenButton = () => {
+    Setopen(true)
+  }
+
+  const handleCloseButton = () => {
+    Setopen(false)
+  }
 
 
   const handleToggle = (index) => {
@@ -66,11 +133,43 @@ export const SectionEight = () => {
     setCardStates(newCardStates);
 
     if (newCardStates[index]) {
-      setSelectedCardInfo(cardBase[index]);
+      setSelectedCardInfo({ ...cardBase[index], index }); // Добавляем индекс в объект
     } else {
       setSelectedCardInfo(null);
     }
   };
+
+  const baseModal = [
+
+    {
+      title: 'Позволит вам попасть на самую грандиозную SEO тусовку в Украине',
+    },
+
+    {
+      title: 'Позволит вам попасть на самую грандиозную SEO тусовку в Украине',
+    },
+
+    {
+      title: 'Позволит вам попасть на самую грандиозную SEO тусовку в Украине',
+    },
+
+    {
+      title: 'Позволит вам попасть на самую грандиозную SEO тусовку в Украине',
+    },
+  ]
+
+  useEffect(() => {
+    const updatedTotalPrice = cardStates.reduce((total, isSelected, index) => {
+      if (isSelected) {
+        total += cardBase[index].price;
+      }
+      return total;
+    }, 0);
+    setTotalPrice(updatedTotalPrice);
+  }, [cardStates]);
+
+
+  const hasSelectedCard = cardStates.some(isSelected => isSelected);
 
 
   return (
@@ -108,12 +207,12 @@ export const SectionEight = () => {
 
                 <div className="sectionEight__content-cards-card__price">
                   <p className='sectionEight__content-cards-card__price-text'>
-                    {el.price}
+                    ${el.price}
                   </p>
                 </div>
               </div>
 
-              <div className="sectionEight__content-cards-card__more">
+              <div className="sectionEight__content-cards-card__more" onClick={handleOpenButton}>
                 <p className='sectionEight__content-cards-card__more-text'>
                   {el.btn}
                 </p>
@@ -166,26 +265,62 @@ export const SectionEight = () => {
                 Общая стоимость:
               </p>
 
-              {selectedCardInfo ? (
+              {hasSelectedCard ? (
                 <h3 className='sectionEight__content-form__count-info-h3'>
-                  {selectedCardInfo.price} USD
+                  {totalPrice} USD
                 </h3>
               ) : (
                 <h3 className='sectionEight__content-form__count-info-h3'>
-                0 USD
-              </h3>
+                  0 USD
+                </h3>
               )}
 
             </div>
 
             <div className="sectionEight__content-form__count-promo">
               <input className='sectionEight__content-form__count-promo__input-external sectionEight__content-form__count-promo__input' placeholder='Код для скидки (если есть)' type="text" />
-              <button className='button header-button-1'>{jsonDate['btn']['text']}</button>
+              <button className='button header-button-1'>Зарегистрироваться</button>
 
             </div>
           </div>
 
         </form>
+
+        {open && selectedCardInfo && (
+          <div id="myModal" className="sectionEight__modal">
+            <div className="sectionEight__modal-content" onClick={handleCloseButton}>
+              <img className='sectionEight__modal-content-close' src={Close} alt="" />
+              <img className='sectionEight__modal-content-image' src={ImageItemsFast[selectedCardInfo.index].image} alt='' />
+              <div className="sectionEight__modal-content__block">
+                <h2 className='sectionEight__modal-content__block-h2'>Пакет - {selectedCardInfo.title}</h2>
+                <div className="sectionEight__content-cards-card__price">
+                  <p className='sectionEight__content-cards-card__price-text'>
+                    ${selectedCardInfo.price}
+                  </p>
+                </div>
+              </div>
+
+              <h3 className='sectionEight__modal-content__h3'>{baseModal[selectedCardInfo.index].title}</h3>
+
+              <div className="sectionEight__modal-content__line" />
+
+              <h3 className='sectionEight__modal-content__h3 externalEigth-h3'>Включает в себя:</h3>
+
+              <div className="sectionEight__modal-content__container">
+                {mainBaseModal.map((el, index) => (
+                  <div key={index} className="sectionEight__modal-content__container-Child">
+                    <img className='sectionEight__modal-content__container-Child-image' src={el.imgae} alt="" />
+                    <p className='sectionEight__modal-content__container-Child-text'>{el.text}</p>
+                  </div>
+                ))}
+              </div>
+
+
+
+            </div>
+          </div>
+        )}
+
 
       </div>
     </section>

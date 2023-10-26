@@ -8,7 +8,12 @@
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 4px 21px -6px rgba(0, 0, 0, 0.12);
-  margin-bottom: 120px;
+  // margin-bottom: 120px;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: 0px 8px 30px -10px rgba(0, 0, 0, 0.3);
+  }
 
   &__content {
     position: relative;
@@ -51,6 +56,11 @@
         border-radius: 6px;
         border: 1px solid #F3F3F3;
         background: #FFF;
+        transition: .3s;
+
+        &:hover {
+          border: 1px solid #E43030;
+        }
 
         &-active {
           position: relative;
@@ -104,6 +114,7 @@
         }
 
         &__more {
+          cursor: pointer;
           max-width: 166.5px;
           padding: 2px 12px;
           background-color: #F3F3F3;
@@ -239,7 +250,7 @@
 
   &__line {
     margin-top: 41px;
-    max-width: 690px;
+    min-width: 690px;
     height: 1px;
     background: #E5E5E5;
   }
@@ -251,4 +262,84 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   grid-column-gap: 50px;
+}
+
+.sectionEight__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+
+  &-content {
+    position: relative;
+    max-width: 840px;
+    max-height: 580px;
+    margin: 15% auto;
+    background-color: #fff;
+    padding: 24px 32px 78px;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    &-image {
+      max-width: 100%;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &-close {
+      cursor: pointer;
+      position: absolute;
+      right: 2%;
+      top: 3%;
+      height: 16px;
+      width: 16px;
+      display: block;
+      z-index: 333;
+    }
+
+    &__block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 333;
+    }
+
+    &__h3 {
+      color: #666;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    &__line {
+      margin-top: 32px;
+      min-width: 576px;
+      height: 1px;
+      flex-shrink: 0;
+      background: #E5E5E5;
+    }
+
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      &-Child {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+
+}
+
+.externalEigth-h3 {
+  margin-top: 32px;
 }

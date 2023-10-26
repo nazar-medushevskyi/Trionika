@@ -1,0 +1,170 @@
+.sectionNine {
+  background: url(./Images/bg-sectionNine.png), #14141E 0px 0px / 100% 110.276% no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -70px;
+
+  &__content {
+    padding-bottom: 100px;
+
+    &-title {
+      color: #FFF;
+      padding-top: 120px;
+      text-align: center;
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    &__card {
+      margin: 0 auto;
+      max-width: 837px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      background: radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%);
+      box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+      backdrop-filter: blur(11px);
+
+      &-content {
+        padding: 38px 48px;
+
+        &__line {
+          margin-top: 37px;
+          min-width: 741px;
+          height: 1px;
+          background: #2E2E37;
+        }
+
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &-Gruop {
+            width: 345.651px;
+            height: 42px;
+          }
+
+          &-instagram {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &-image {
+              width: 32px;
+              height: 32px;
+            }
+
+            &-text {
+              color: #FFF;
+              font-family: Inter;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0.28px;
+            }
+          }
+
+          &-telegram {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &-image {
+              width: 32px;
+              height: 32px;
+            }
+
+            &-text {
+              color: #FFF;
+              font-family: Inter;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0.14px;
+            }
+
+          }
+        }
+
+        &__text-container {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+
+          &__text {
+            color: #FFF;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+
+            &-span {
+              color: #F0E91D;
+              font-family: Inter;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.speakers {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &-image {
+    width: 59.856px;
+    height: 64px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    &-name {
+      color: #FFF;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      letter-spacing: 0.16px;
+      margin: 0;
+    }
+
+    &-text {
+      margin: 0;
+      color: #8E8E93;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: 0.14px;
+    }
+  }
+
+  &__small-image {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.containerNine {
+  margin-top: 8px;
+  display: flex;
+  gap: 4px;
+}
