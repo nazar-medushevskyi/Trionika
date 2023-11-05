@@ -10,6 +10,7 @@ import { SectionSeven } from './Section-7/SectionSeven';
 import { SectionEight } from './Section-8/SectionEight';
 import { SectionNine } from './Section-9/SectionNine';
 import { SectionTen } from './Section-10/SectionTen';
+import { SectionEleven } from './Section-11/SectionEleven';
 
 export const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ export const HomePage = () => {
       <SectionEight />
       <SectionNine />
       <SectionTen />
+      <SectionEleven />
     </>
   );
 }
